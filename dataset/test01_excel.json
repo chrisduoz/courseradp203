@@ -1,0 +1,30 @@
+{
+	"name": "test01_excel",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "blob_courseradp203",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "test01.xlsx",
+				"container": "courseradp203"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "aaa",
+				"type": "String"
+			},
+			{
+				"name": "bbb",
+				"type": "String"
+			}
+		]
+	}
+}

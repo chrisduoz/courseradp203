@@ -1,0 +1,27 @@
+{
+	"name": "Test01",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "sqldb_courseradb203",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "aaa",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "bbb",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "test01"
+		}
+	}
+}
